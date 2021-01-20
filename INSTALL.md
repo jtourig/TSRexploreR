@@ -19,44 +19,44 @@ conda info --envs
 Now create and activate the TSRexploreR environment:
 ```bash
 conda create -n TSRexploreR -y -c conda-forge -c bioconda \
-r-tidyverse \
-r-data.table \
-r-devtools \
-r-ggseqlogo \
-r-cowplot \
-r-rcpp \
-r-assertthat \
-r-testthat \
-r-cairo \
-r-ggrastr \
-bioconductor-apeglm \
-bioconductor-genomicranges \
-bioconductor-genomicfeatures \
-bioconductor-genomicalignments \
-bioconductor-biostrings \
-bioconductor-rsamtools \
-bioconductor-chipseeker \
-bioconductor-edger \
-bioconductor-deseq2 \
-bioconductor-clusterProfiler \
-bioconductor-complexheatmap \
-bioconductor-cager \
-bioconductor-tsrchitect \
-bioconductor-gviz \
-bioconductor-rtracklayer \
-bioconductor-biocgenerics \
-bioconductor-plyranges \
-bioconductor-pcatools \
-bioconductor-GenomeInfoDb
-bioconductor-bsgenome.scerevisiae.ucsc.saccer3 \
-bioconductor-txdb.scerevisiae.ucsc.saccer3.sgdgene
+  r-tidyverse \
+  r-data.table \
+  r-devtools \
+  r-ggseqlogo \
+  r-cowplot \
+  r-rcpp \
+  r-assertthat \
+  r-testthat \
+  r-cairo \
+  r-ggrastr \
+  bioconductor-apeglm \
+  bioconductor-genomicranges \
+  bioconductor-genomicfeatures \
+  bioconductor-genomicalignments \
+  bioconductor-biostrings \
+  bioconductor-rsamtools \
+  bioconductor-chipseeker \
+  bioconductor-edger \
+  bioconductor-deseq2 \
+  bioconductor-clusterProfiler \
+  bioconductor-complexheatmap \
+  bioconductor-cager \
+  bioconductor-tsrchitect \
+  bioconductor-gviz \
+  bioconductor-rtracklayer \
+  bioconductor-biocgenerics \
+  bioconductor-plyranges \
+  bioconductor-pcatools \
+  bioconductor-GenomeInfoDb \
+  bioconductor-bsgenome.scerevisiae.ucsc.saccer3 \
+  bioconductor-txdb.scerevisiae.ucsc.saccer3.sgdgene
 
-conda activate TSRexploreR
+conda activate TSRexploreR || source activate TSRexploreR   # if conda version < 4.6
 ```
 
 Now in R
 ```bash
-devtools::install_github("zentnerlab/TSRexploreR", ref="clean")
+devtools::install_github("zentnerlab/TSRexploreR", ref="main")
 ```
 will load the TSRexploreR library.
 
