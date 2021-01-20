@@ -61,7 +61,7 @@ devtools::install_github("zentnerlab/TSRexploreR", ref="main")
 will load the TSRexploreR library.
 
 
-## Method 2: create a local TSRexploreR librarry
+## Method 2: create a local TSRexploreR library
 
 In an R console:
 ```bash
